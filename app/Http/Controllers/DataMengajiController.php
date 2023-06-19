@@ -33,6 +33,7 @@ class DataMengajiController extends Controller
         // Menyimpan file rekaman ke dalam penyimpanan (storage)
         Storage::putFileAs('public/' . auth()->user()->nim, $rekaman, $namaRekaman);
 
+        //Simpan data ngaji ke dalam database
         // Membuat entri baru dalam tabel ngaji
         Ngaji::create([
             'rekaman' => $path,
@@ -54,6 +55,7 @@ class DataMengajiController extends Controller
         return view('rekap', compact('data'));
     }
 
+    //hapus data dari database
     public function hapus($id)
     {
         // Menghapus data mengaji berdasarkan ID dan kembali ke halaman sebelumnya
