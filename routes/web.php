@@ -16,6 +16,7 @@
     | be assigned to the "web" middleware group. Make something great!
     |
     */
+    //halaman awal pengguna
     Route::get('/', function () {
         return view('master');
     });
