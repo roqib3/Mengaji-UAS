@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,19 +9,15 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 <body>
 
     <!-- header section starts  -->
 
     <header class="header">
-
         <a href="#" class="logo">
             <img src="images/logo.png" alt="">
         </a>
-
         <nav class="navbar">
             <a href="/">home</a>
             <a href="/tentang">tentang</a>
@@ -31,11 +26,9 @@
             <a href="/rekap">rekap</a>
             @endif
         </nav>
-
         <div class="icons">
             <div class="fas fa-bars" id="menu-btn"></div>
         </div>
-
     </header>
 
     <!-- header section ends -->
@@ -52,10 +45,8 @@
     <!-- section starts  -->
 
     <section class="datamengaji" id="data">
-
         <h1 class="heading"> <span> data </span> mengaji </h1>
-        <div class="kotak">
-            
+        <div class="kotak">  
             <form action="{{ route('datamengaji.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <!-- rekaman -->
@@ -80,24 +71,19 @@
                 </div>
                 <input type="submit" name="rekap" value="Simpan" class="tbl tsimpan">
             </form>
-
         </div>
-
     </section>
-
     <!-- section ends -->
 
     <!-- footer section starts  -->
 
     <section class="footer">
-
         <div class="share">
             <p> Selalu ikuti perkembangan informasi mengenai Program Khatam Al-Quran Universitas Jambi melalui website
                 dan akun sosial media instagram </p>
             <a href="https://jami-assalam.unja.ac.id/" class="fas fa-globe">&nbsp; jami-assalam.unja.ac.id</a>
             <a href="https://www.instagram.com/jami_assalam_pkq_unja/" class="fab fa-instagram">&nbsp; pkq_unja</a>
         </div>
-
     </section>
 
     <!-- footer section ends -->
